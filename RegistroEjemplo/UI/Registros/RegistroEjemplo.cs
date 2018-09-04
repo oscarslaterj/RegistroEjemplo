@@ -127,5 +127,10 @@ namespace RegistroEjemplo
             else
                 ErrorProvider.Equals(IDnumericUpDown, "No se puede eliminar una persona que no existe");
         }
+
+        private void consultaToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+           
+        }
     }
 }
