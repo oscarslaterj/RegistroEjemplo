@@ -55,15 +55,15 @@
     <Compile Include="BLL\PersonaBLL.cs" />
     <Compile Include="DAL\Scripts\Contexto.cs" />
     <Compile Include="Entidades\Personas.cs" />
-    <Compile Include="RegistroEjemplo.cs">
+    <Compile Include="UI\Registros\RegistroEjemplo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistroEjemplo.Designer.cs">
+    <Compile Include="UI\Registros\RegistroEjemplo.Designer.cs">
       <DependentUpon>RegistroEjemplo.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="RegistroEjemplo.resx">
+    <EmbeddedResource Include="UI\Registros\RegistroEjemplo.resx">
       <DependentUpon>RegistroEjemplo.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -92,7 +92,6 @@
   <ItemGroup>
     <Folder Include="Resources\" />
     <Folder Include="UI\Consultas\" />
-    <Folder Include="UI\Registros\" />
     <Folder Include="UI\Reportes\" />
   </ItemGroup>
   <ItemGroup>
