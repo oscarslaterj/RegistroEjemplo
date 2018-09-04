@@ -75,9 +75,21 @@ namespace RegistroEjemplo.BLL
             return paso;
         }
 
-        public stactic bool Buscar(int id)
+        public static Personas Buscar(int id)
         {
+            Contexto contexto = new Contexto();
+            Personas persona = new Personas(); 
 
+            try
+            {
+                persona = contexto.Personas.Find(id);
+                contexto.Dispose();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            return persona;
         }
 
     }
