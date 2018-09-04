@@ -92,6 +92,22 @@ namespace RegistroEjemplo.BLL
             return persona;
         }
 
+        public static List<Personas> GetList(Expression<Func<Personas, bool>> expression)
+        {
+            List<Personas> personas = new List<Personas>();
+            Contexto contexto = new Contexto();
+            try
+            {
+                personas = contexto.Personas.Where(expression).ToList();
+                contexto.Dispose();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            return personas;
+        }
+
     }
 }
    
