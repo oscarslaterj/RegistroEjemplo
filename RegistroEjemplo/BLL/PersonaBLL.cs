@@ -92,7 +92,7 @@ namespace RegistroEjemplo.BLL
             return persona;
         }
 
-        public static List<Personas> GetList(Expression<Func<Personas, bool>> expression)
+        public static List<Personas> GetList(Expression<Func<Personas, bool >> expression)
         {
             List<Personas> personas = new List<Personas>();
             Contexto contexto = new Contexto();
