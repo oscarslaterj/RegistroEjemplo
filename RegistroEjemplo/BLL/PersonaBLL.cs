@@ -75,6 +75,10 @@ namespace RegistroEjemplo.BLL
             return paso;
         }
 
+        public stactic bool Buscar(int id)
+        {
+
+        }
 
     }
 }
