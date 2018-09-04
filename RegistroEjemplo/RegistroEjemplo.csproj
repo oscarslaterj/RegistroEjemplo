@@ -52,8 +52,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BLL\PersonaBLL.cs" />
     <Compile Include="DAL\Scripts\Contexto.cs" />
-    <Compile Include="Entidades\Persona.cs" />
+    <Compile Include="Entidades\Personas.cs" />
     <Compile Include="RegistroEjemplo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,7 +90,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="BLL\" />
     <Folder Include="Resources\" />
     <Folder Include="UI\Consultas\" />
     <Folder Include="UI\Registros\" />

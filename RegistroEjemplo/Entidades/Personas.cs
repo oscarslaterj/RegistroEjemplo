@@ -17,7 +17,7 @@ namespace RegistroEjemplo.Entidades
         public String Direccion { get; set; }
         public DateTime FechaNacimiento { get; set; }
 
-        public Persona()
+        public Personas()
         {
             PersonaID = 0;
             Nombre = string.Empty;
