@@ -53,6 +53,28 @@ namespace RegistroEjemplo.BLL
             return paso;
         }
 
+        public static bool Eliminar(int id)
+        {
+            bool paso = false;
+
+            Contexto contexto = new Contexto();
+            try
+            {
+                Personas personas = contexto.Personas.Find(id);
+                contexto.Personas.Remove(personas);
+                if (contexto.SaveChanges() > 0)
+                {
+                    paso = true;
+                }
+                contexto.Dispose();
+            }
+            catch (Exception)
+            {
+                throw;
+            }
+            return paso;
+        }
+
 
     }
 }
